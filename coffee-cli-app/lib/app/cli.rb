@@ -3,6 +3,7 @@ class Coffee::CLI
 
   def call
     puts "Looking for information about coffee roasts?"
+    puts "Type yes or no"
     input = gets.strip.downcase
     if input == "yes"
       list_coffee
@@ -12,7 +13,7 @@ class Coffee::CLI
 
   def list_coffee
 
-    puts "Choose which roast you would like to learn more about"
+    puts "Choose which roast you would like to learn more about:"
     puts <<-DOC.gsub /^\s*/, ''
       Light
       Medium
@@ -42,7 +43,7 @@ class Coffee::CLI
         puts "Surface:            #{output.surface}"
         puts "Roast Flavor:       #{output.flavor}"
         puts "-"*30
-        puts "Type list to see the options or exit."
+        puts "Type list to see the options again or exit."
       when "List"
         list_coffee
       when "Exit"
