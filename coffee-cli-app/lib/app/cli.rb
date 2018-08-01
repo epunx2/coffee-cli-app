@@ -36,11 +36,11 @@ class Coffee::CLI
           i.name == input
         }
         puts "Roast:"
-        puts "Name: #{output.name}"
+        puts "Name:               #{output.name} Roast"
         puts "Common Roast Names: #{output.common_roast_names}"
-        puts "Notes: #{output.notes}"
-        puts "Surface: #{output.surface}"
-        puts "Roast Flavor: #{output.flavor}"
+        puts "Notes:              #{output.notes}"
+        puts "Surface:            #{output.surface}"
+        puts "Roast Flavor:       #{output.flavor}"
         puts "-"*30
         puts "Type list to see the options or exit."
       when "List"
