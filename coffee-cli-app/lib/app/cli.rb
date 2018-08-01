@@ -4,7 +4,7 @@ class Coffee::CLI
   # This method will call the other methods in the app
   def call
     puts "Looking for information about coffee roasts?"
-    puts "Type yes or no"
+    puts "Type 'yes' or 'no'"
     input = gets.strip.downcase
     # If user types yes then the app continues and presents the options
     # and then begins scraping wikipedia and creating Coffee::Roast objects
@@ -16,13 +16,11 @@ class Coffee::CLI
 
   # Method to list the options the user has
   def list_coffee
-
+    puts "-"*165
     puts "Choose which roast you would like to learn more about:"
-    puts <<-DOC.gsub /^\s*/, ''
-      Light
-      Medium
-      Dark
-    DOC
+    puts "\n"
+    puts "Light, Medium, or Dark"
+    puts "\n"
   end
 
   # Method to set the url, call the scraper class, receive the Roast methods,
@@ -41,22 +39,23 @@ class Coffee::CLI
     while input != "Exit"
 
       input = gets.strip.capitalize
+      puts "\n"
       # This logic determines what to do with the user input
       case input
         # output details of roast object based on input
       when "Dark", "Medium", "Light"
-        puts "-"*30
+        puts "-"*165
         # find the roast that matches the user input and retrieve
         output = @roasts.detect { |i|
           i.name == input
         }
-        puts "Roast:"
         puts "Name:               #{output.name} Roast"
         puts "Common Roast Names: #{output.common_roast_names}"
         puts "Notes:              #{output.notes}"
         puts "Surface:            #{output.surface}"
         puts "Roast Flavor:       #{output.flavor}"
-        puts "-"*30
+        puts "-"*165
+        puts "\n"
         puts "Type list to see the options again or exit."
       when "List"
         list_coffee
@@ -67,11 +66,12 @@ class Coffee::CLI
       end
 
     end
-    puts "-"*30
+
   end
 
   def goodbye
     puts "Thanks for using the app. Try us again soon!"
+    puts "-"*165
   end
 
 end
