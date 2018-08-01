@@ -4,3 +4,4 @@ require 'pry'
 require_relative "./app/version"
 require_relative "./app/cli"
 require_relative "./app/coffee"
+require_relative "./app/scraper"
