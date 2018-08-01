@@ -1,6 +1,6 @@
 #!/usr/bin/env ruby
 
 require "bundler/setup"
-require './lib/coffee/cli/app'
+require './lib/app'
 
 Coffee::CLI.new.call
