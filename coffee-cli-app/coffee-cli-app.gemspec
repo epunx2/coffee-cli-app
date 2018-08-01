@@ -11,7 +11,7 @@ Gem::Specification.new do |spec|
 
   spec.summary       = %q{This gem will scrap wikipedia article on coffee roasts}
   spec.description   = %q{Search wikipedia page for info on coffee roasts. Light, medium, and dark.}
-  spec.homepage      = "https://github.com/epunx2/cli-data-gem-assessment-v-000.git"
+  spec.homepage      = "https://github.com/epunx2/coffee-cli-app.git"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
   # to allow pushing to a single host or delete this section to allow pushing to any host.
