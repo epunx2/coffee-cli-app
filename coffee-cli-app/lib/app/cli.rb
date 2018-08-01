@@ -43,7 +43,7 @@ class Coffee::CLI
         puts "Roast Flavor: #{output.flavor}"
         puts "-"*30
         puts "Type list to see the options or exit."
-      when "list"
+      when "List"
         list_coffee
       when "Exit"
         goodbye
