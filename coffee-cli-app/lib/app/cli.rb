@@ -23,7 +23,8 @@ class Coffee::CLI
   def menu
     input = nil
     url = "https://en.wikipedia.org/wiki/Coffee_roasting"
-    @roasts = Coffee::Roast.roasts(url)
+    Coffee::Scraper.scrape_wikipedia(url)
+    @roasts = Coffee::Roast.all
     while input != "Exit"
 
       input = gets.strip.capitalize

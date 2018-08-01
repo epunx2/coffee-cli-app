@@ -7,8 +7,8 @@ class Coffee::Roast
     @@roasts << self
   end
 
-  def self.roasts(url)
-    Coffee::Scraper.scrape_wikipedia(url)
+  def self.all
+    @@roasts
   end
 
 
