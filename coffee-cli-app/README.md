@@ -21,8 +21,19 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+After installing:
 
+1. Switch to the coffe-cli-app/coffee-cli-app directory.
+
+2. Type "/bin/coffee-cli-app" in the console.
+
+3. Type "yes" at the first question prompt to continue. Otherwise the application will close.
+
+4. Enter the following at the next prompt:
+  - "List": prints a list of available options
+  - "Light", "Medium", or "Dark": returns information regarding the roasts
+  - "Exit": to close the application
+  
 ## Development
 
 After checking out the repo, run `bin/setup` to install dependencies. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
