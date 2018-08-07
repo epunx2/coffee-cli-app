@@ -1,9 +1,7 @@
 # Coffee::Cli::App
 ![Image of coffee beans](https://images.pexels.com/photos/34085/pexels-photo.jpg?auto=compress&cs=tinysrgb&h=350)
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/Coffee/cli/app`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+This CLI app receives user input, scrapes the Wikipedia coffee page for information about Coffee roasts, and returns information about the coffee roast.
 
 ## Installation
 
