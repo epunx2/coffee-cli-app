@@ -5,7 +5,7 @@ This CLI app receives user input, scrapes the Wikipedia coffee page for informat
 
 ## Build Status
 
-[![Build Status](https://travis-ci.org/epunx2/coffee-cli-app)]
+[![Build Status](https://travis-ci.org/epunx2/coffee-cli-app#)]
 
 ## Code Style
 
