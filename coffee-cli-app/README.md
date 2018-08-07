@@ -65,3 +65,7 @@ Bug reports and pull requests are welcome on GitHub at https://github.com/epunx2
 ## Code of Conduct
 
 Everyone interacting in the Coffee::Cli::App project’s codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/epunx2/coffee-cli-app/coffee-cli-app/CODE_OF_CONDUCT.md).
+
+## License
+
+The Coffee-cli-app is released under the [MIT License](https://opensource.org/licenses/MIT).
