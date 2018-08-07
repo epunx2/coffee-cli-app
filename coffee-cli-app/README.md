@@ -3,6 +3,29 @@
 
 This CLI app receives user input, scrapes the Wikipedia coffee page for information about Coffee roasts, and returns information about the coffee roast.
 
+## Build Status
+
+[![Build Status]]
+[![Windows Build Status]]
+
+## Code Style
+
+[![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat))](https://github.com/feross/standard)
+
+## Screenshots
+
+## Tech/framework used
+
+  - **[Ruby](https://www.ruby-lang.org/en/)**
+
+## Features
+
+  - Command Line Interface
+  - Scrapes Wikipedia
+  - Creates Coffee Roast Objects
+  - Receives input from user
+  - Returns Coffee Roast Objects
+
 ## Installation
 
 Add this line to your application's Gemfile:
