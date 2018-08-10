@@ -6,11 +6,21 @@ class Coffee::CLI
     puts "Looking for information about coffee roasts?"
     puts "Type 'yes' or 'no'"
     input = gets.strip.downcase
+
     # If user types yes then the app continues and presents the options
     # and then begins scraping wikipedia and creating Coffee::Roast objects
+    # set the url, call the scraper class, receive the Roast methods,
     if input == "yes"
+      # Page being scraped
+      url = "https://en.wikipedia.org/wiki/Coffee_roasting"
+      # This will scrape the wikipedia page and create the objects
+      Coffee::Scraper.scrape_wikipedia(url)
+      # Retrieves the Roast objects from the Roast class
+      @roasts = Coffee::Roast.all
       list_coffee
       menu
+    else
+      goodbye
     end
   end
 
@@ -19,21 +29,20 @@ class Coffee::CLI
     puts "-"*165
     puts "Choose which roast you would like to learn more about:"
     puts "\n"
-    puts "Light, Medium, or Dark"
+    @roasts.each do |e|
+      puts e.name
+    end
     puts "\n"
   end
 
-  # Method to set the url, call the scraper class, receive the Roast methods,
+  # Method to
   # receive input, output the user's choice, the logic to determine what to
   # output to the user.
   def menu
     input = nil
-    # Page being scraped
-    url = "https://en.wikipedia.org/wiki/Coffee_roasting"
-    # This will scrape the wikipedia page and create the objects
-    Coffee::Scraper.scrape_wikipedia(url)
-    # Retrieves the Roast objects from the Roast class
-    @roasts = Coffee::Roast.all
+
+
+
 
     # This will continue to receive input until the user types exit.
     while input != "Exit"
