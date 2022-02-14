@@ -41,9 +41,9 @@ Or install it yourself as:
 
 After installing:
 
-1. Switch to the coffe-cli-app/coffee-cli-app directory.
+1. Switch to the coffee-cli-app directory in your CLI app.
 
-2. Type "/bin/coffee-cli-app" in the console.
+2. Type "bin/coffee-cli" in the console.
 
 3. Type "yes" at the first question prompt to continue. Otherwise the application will close.
 
@@ -64,7 +64,7 @@ Bug reports and pull requests are welcome on GitHub at https://github.com/epunx2
 
 ## Code of Conduct
 
-Everyone interacting in the Coffee::Cli::App project’s codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/epunx2/coffee-cli-app/coffee-cli-app/CODE_OF_CONDUCT.md).
+Everyone interacting in the Coffee::Cli::App project’s codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/epunx2/coffee-cli-app/CODE_OF_CONDUCT.md).
 
 ## License
 
